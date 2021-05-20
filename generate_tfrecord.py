@@ -15,6 +15,7 @@ from __future__ import absolute_import
 import os
 import io
 import pandas as pd
+import tensorflow as tf
 import tf.compat.v1 as tf
 import sys
 
