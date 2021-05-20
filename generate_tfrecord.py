@@ -17,7 +17,7 @@ import io
 import pandas as pd
 import tensorflow as tf
 import sys
-
+tf.gfile = tf.io.gfile
 sys.path.append("../../models/research")
 
 from PIL import Image
