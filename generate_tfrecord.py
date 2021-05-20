@@ -15,6 +15,7 @@ from __future__ import absolute_import
 import os
 import io
 import pandas as pd
+import absl
 import tensorflow as tf
 import sys
 
@@ -24,7 +25,7 @@ from PIL import Image
 from object_detection.utils import dataset_util
 from collections import namedtuple, OrderedDict
 
-flags = tf.app.flags
+flags = absl.flags
 flags.DEFINE_string("csv_input", "", "Path to the CSV input")
 flags.DEFINE_string("output_path", "", "Path to output TFRecord")
 flags.DEFINE_string(
